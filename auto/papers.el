@@ -1,12 +1,12 @@
 (TeX-add-style-hook
  "papers"
  (lambda ()
-   (TeX-add-to-alist 'LaTeX-provided-class-options
-                     '(("article" "12pt")))
-   (TeX-run-style-hooks
-    "latex2e"
-    "article"
-    "art12")
-   (LaTeX-add-bibliographies))
- :latex)
+   (LaTeX-add-bibitems
+    "watters2017visual"
+    "xu2019unsupervised"
+    "rematas2018soccer"
+    "James_2019_CVPR"
+    "Kanazawa_2019_CVPR"
+    "Wang_2019_CVPR"))
+ :bibtex)
 
