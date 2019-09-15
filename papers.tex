@@ -1,4 +1,36 @@
 \documentclass[12pt]{article}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{amsmath}                      
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{verbatim}
+\usepackage{xcolor}
+\usepackage{verbatim}
+\usepackage{amssymb}
+\usepackage{mathtools, nicefrac}
+
+\graphicspath{{figures/}}
+
+\newcommand{\plotfigureS}[2]{
+\begin{figure}[H]
+\centering
+\includegraphics[width=#2\linewidth]{#1}
+\caption[#1]{#1}
+\label{#1}
+\end{figure}
+}
+
+
 \begin{document}
 
 \textbf{NIPS 2017}
@@ -17,18 +49,61 @@ Unsupervised Discovery of Parts, Structure, and Dynamics
 Soccer on your tabletop \cite{rematas2018soccer}
 
 
-\textbf{CVPR 2019}
 
-Sim-To-Real via Sim-To-Sim: Data-Efficient Robotic Grasping via
-Randomized-To-Canonical Adaptation Networks \cite{James_2019_CVPR}
+ {\LARGE\noindent\textbf{NIPS 2018}}
+\begin{description}
+  \item[$\bullet$ DDPAE] Learning to decompose and disentangle representations
+    for video prediction \cite{hsieh2018learning}, fig.\ref{ddpae}
+fig.\ref{simtosim}
+\item[$\bullet$ OODP] Object-oriented dynamics predictor
+  \cite{kanazawa_2019_cvpr}, fig.\ref{oodp}, fig.\ref{oodp2}
+\item[$\bullet$ Beliefs about Dynamics from Behavior] Where do you think you're going?: Inferring beliefs about dynamics from behavior \cite{reddy2018you}, fig.\ref{beliefsdynamics}
+\item[$\bullet$ Beliefs about Dynamics from Behavior] Learning attractor dynamics for generative memory \cite{wu2018learning}, fig.\ref{beliefsdynamics}
 
-Learning 3D Human Dynamics From Video \cite{Kanazawa_2019_CVPR}
+\item[$\bullet$ Beliefs about Dynamics from Behavior] Unsupervised learning of shape and pose with differentiable point clouds \cite{insafutdinov2018unsupervised}, fig.\ref{shapecampose}
 
-Memory in Memory: A Predictive Neural Network for Learning Higher-Order
-Non-Stationarity From Spatiotemporal Dynamics \cite{Wang_2019_CVPR}
+\item[$\bullet$ Beliefs about Dynamics from Behavior] Unsupervised video object segmentation for deep reinforcement learning \cite{goel2018unsupervised}, fig.\ref{beliefsdynamics}
 
 
+\item[$\bullet$ DL Prob Dynamics] Deep reinforcement learning in a handful of trials using probabilistic dynamics models \cite{chua2018deep}, fig.\ref{pets}
+  
+\item[$\bullet$ LCP physics \cite{de2018end}]
+
+\item[$\bullet$ Neural ODEs \cite{chen2018neural}]
+
+\item[$\bullet$ Flexible Neural Representation for Physics Prediction \cite{mrowca2018flexible}]
+
+
+\end{description}
+
+ 
+ {\LARGE\noindent\textbf{CVPR 2019}}
+
+
+\begin{description}
+  \item[$\bullet$ Sim-to-Real via Sim-to-Sim] Sim-To-Real via Sim-To-Sim: Data-Efficient Robotic Grasping via
+Randomized-To-Canonical Adaptation Networks \cite{James_2019_CVPR},
+fig.\ref{simtosim}
+\item[$\bullet$ 3DHuman] Learning 3d human dynamics from video
+  \cite{kanazawa_2019_cvpr}, fig.\ref{3dhuman1}, fig.\ref{3dhuman2}
+\item[$\bullet$ MemInMemLSTM] Memory in Memory: A Predictive Neural Network for
+  Learning Higher-Order Non-Stationarity From Spatiotemporal Dynamics \cite{Wang_2019_CVPR}, fig.\ref{mimLSTM1}, fig.\ref{mimLSTM2}
+
+
+
+\end{description}
 
 \bibliography{papers}
 \bibliographystyle{ieeetr}
+\plotfigureS{simtosim}{1.0}
+\plotfigureS{3dhuman1}{1.0}
+\plotfigureS{3dhuman2}{1.0}
+\plotfigureS{mimLSTM1}{1.0}
+\plotfigureS{mimLSTM2}{1.0}
+\plotfigureS{ddpae}{1.0}
+\plotfigureS{oodp}{1.0}
+\plotfigureS{oodp2}{1.0}
+\plotfigureS{beliefsdynamics}{1.0}
+\plotfigureS{pets}{1.0}
+\plotfigureS{shapecampose}{1.0}
 \end{document}
