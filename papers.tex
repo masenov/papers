@@ -33,20 +33,49 @@
 
 \begin{document}
 
-\textbf{NIPS 2017}
-
-Visual interaction networks \cite{watters2017visual}
 
 
+ {\LARGE\noindent\textbf{NIPS 2017}}
+\begin{description}
+  \item[$\bullet$ Visual interaction networks] Visual interaction networks \cite{watters2017visual}
 
-\textbf{ICLR 2019}
+\end{description}
 
-Unsupervised Discovery of Parts, Structure, and Dynamics
-\cite{xu2019unsupervised}
+ {\LARGE\noindent\textbf{ICRA 2019}}
+\begin{description}
+  \item[$\bullet$ Variational Policy] Vpe: Variational policy embedding for
+    transfer reinforcement learning \cite{arnekvist2018vpe}, fig.\ref{vpe}, fig.\ref{vpe2}
 
-\textbf{CVPR 2018}
+\end{description}
 
-Soccer on your tabletop \cite{rematas2018soccer}
+
+
+
+
+
+
+ {\LARGE\noindent\textbf{ICLR 2019}}
+\begin{description}
+  \item[$\bullet$ Unsupervised Physics] Unsupervised Discovery of Parts, Structure, and Dynamics
+\cite{xu2019unsupervised}, fig.\ref{unsupervisedDyn1}, fig.\ref{unsupervisedDyn2}
+  \item[$\bullet$ Bounce and Learn] Bounce and Learn: Modeling Scene Dynamics with Real-World Bounces
+\cite{purushwalkam2019bounce}, fig.\ref{bounceAndLearn1},
+fig.\ref{bounceAndLearn2}
+  \item[$\bullet$ Particle Dynamics] Learning particle dynamics for manipulating
+    rigid bodies, deformable objects, and fluids \cite{li2018learning}, fig.\ref{particleDynamics}, fig.\ref{particleDynamics2}
+
+\end{description}
+
+
+
+ {\LARGE\noindent\textbf{CVPR 2018}}
+\begin{description}
+  \item[$\bullet$ Disentangling components of dynamics] Recognize Actions by
+    Disentangling Components of Dynamics \cite{Zhao_2018_CVPR},
+    fig.\ref{disentVideo}, fig.\ref{disentVideo2}
+  \item[$\bullet$ Soccer VR] Soccer on your tabletop \cite{rematas2018soccer},
+    fig.\ref{soccer}
+\end{description}
 
 
 
@@ -54,15 +83,16 @@ Soccer on your tabletop \cite{rematas2018soccer}
 \begin{description}
   \item[$\bullet$ DDPAE] Learning to decompose and disentangle representations
     for video prediction \cite{hsieh2018learning}, fig.\ref{ddpae}
-fig.\ref{simtosim}
 \item[$\bullet$ OODP] Object-oriented dynamics predictor
   \cite{kanazawa_2019_cvpr}, fig.\ref{oodp}, fig.\ref{oodp2}
 \item[$\bullet$ Beliefs about Dynamics from Behavior] Where do you think you're going?: Inferring beliefs about dynamics from behavior \cite{reddy2018you}, fig.\ref{beliefsdynamics}
-\item[$\bullet$ Beliefs about Dynamics from Behavior] Learning attractor dynamics for generative memory \cite{wu2018learning}, fig.\ref{beliefsdynamics}
+\item[$\bullet$ Attractor Dynamics] Learning attractor dynamics for generative
+  memory \cite{wu2018learning}, \href{https://neuronaldynamics.epfl.ch/online/Ch17.html}{Attractor dynamics}
+  
 
-\item[$\bullet$ Beliefs about Dynamics from Behavior] Unsupervised learning of shape and pose with differentiable point clouds \cite{insafutdinov2018unsupervised}, fig.\ref{shapecampose}
+\item[$\bullet$ Differentiable point clouds] Unsupervised learning of shape and pose with differentiable point clouds \cite{insafutdinov2018unsupervised}, fig.\ref{shapecampose}
 
-\item[$\bullet$ Beliefs about Dynamics from Behavior] Unsupervised video object segmentation for deep reinforcement learning \cite{goel2018unsupervised}, fig.\ref{beliefsdynamics}
+\item[$\bullet$ Unsupervised video segmentation for RL] Unsupervised video object segmentation for deep reinforcement learning \cite{goel2018unsupervised}, fig.\ref{videosegRL}
 
 
 \item[$\bullet$ DL Prob Dynamics] Deep reinforcement learning in a handful of trials using probabilistic dynamics models \cite{chua2018deep}, fig.\ref{pets}
@@ -89,9 +119,46 @@ fig.\ref{simtosim}
 \item[$\bullet$ MemInMemLSTM] Memory in Memory: A Predictive Neural Network for
   Learning Higher-Order Non-Stationarity From Spatiotemporal Dynamics \cite{Wang_2019_CVPR}, fig.\ref{mimLSTM1}, fig.\ref{mimLSTM2}
 
+\item[$\bullet$ Active Learning] Actively Seeking and Learning From Live Data
+  \cite{Teney_2019_CVPR}, fig.\ref{activeLearning}, fig.\ref{activeLearning2}
 
 
 \end{description}
+
+
+{\LARGE\noindent\textbf{arXiv}}
+
+
+\begin{description}
+  \item[$\bullet$ Discovering physical concepts] Discovering physical concepts with neural networks \cite{iten2018discovering}
+  \item[$\bullet$ Toussaint and Tenenbaum RSS paper] Differentiable Physics and Stable Modes for
+Tool-Use and Manipulation Planning \cite{toussaint2018differentiable}, fig.\ref{rsstoussaint}
+  \item[$\bullet$ VRNNs for residual physics] Augmenting physical simulators with stochastic neural networks: Case study of planar pushing and bouncing \cite{ajay2018augmenting}
+  \item[$\bullet$ Differentiable Soft Objects] ChainQueen: A Real-Time Differentiable Physical Simulator for Soft Robotics \cite{hu2018chainqueen}
+  \item[$\bullet$ Rapid Trial-and-Error] The Tools Challenge: Rapid
+    Trial-and-Error Learning in Physical Problem Solving \cite{allen2019tools},
+    solving tasks similar to the PHYRE Facebook dataset \cite{bakhtin2019phyre}
+  \item[$\bullet$ Interpretable intuitive physics model] Interpretable intuitive
+    physics model \cite{ye2018interpretable}, fig.\ref{interpphys}, fig.\ref{interpphys2}
+  \item[$\bullet$ Unsupervised intuitive physics] Unsupervised intuitive physics
+    from visual observations \cite{ehrhardt2018unsupervised},
+    fig.\ref{unsupervisedBalls},
+    \href{https://geometry.cs.ucl.ac.uk/projects/2018/unsupervised-intuitive-physics/}{Interesting
+    dataset}
+
+    \href{https://ths.rwth-aachen.de/research/projects/hypro/benchmarks-of-continuous-and-hybrid-systems/}{Example
+      SysID problems, continous, discrete, hybrid, etc.}
+    
+    \href{https://myrtle.ai/how-to-train-your-resnet-7-batch-norm/}{Batch Norm;
+      Why DL does not work for RL}
+
+
+  \item[$\bullet$ DL from control perspective] Deep Learning Theory Review: An Optimal Control and Dynamical Systems Perspective \cite{liu2019deep}
+
+    
+\end{description}
+
+
 
 \bibliography{papers}
 \bibliographystyle{ieeetr}
@@ -106,4 +173,23 @@ fig.\ref{simtosim}
 \plotfigureS{beliefsdynamics}{1.0}
 \plotfigureS{pets}{1.0}
 \plotfigureS{shapecampose}{1.0}
+\plotfigureS{videosegRL}{1.0}
+\plotfigureS{disentVideo}{1.0}
+\plotfigureS{disentVideo2}{1.0}
+\plotfigureS{soccer}{1.0}
+\plotfigureS{unsupervisedDyn1}{1.0}
+\plotfigureS{unsupervisedDyn2}{1.0}
+\plotfigureS{bounceAndLearn1}{1.0}
+\plotfigureS{bounceAndLearn2}{1.0}
+\plotfigureS{particleDynamics}{1.0}
+\plotfigureS{particleDynamics2}{1.0}
+\plotfigureS{rsstoussaint}{1.0}
+\plotfigureS{vrnnResidual}{1.0}
+\plotfigureS{interpphys}{1.0}
+\plotfigureS{interpphys2}{1.0}
+\plotfigureS{vpe}{1.0}
+\plotfigureS{vpe2}{1.0}
+\plotfigureS{unsupervisedBalls}{1.0}
+\plotfigureS{activeLearning}{1.0}
+\plotfigureS{activeLearning2}{1.0}
 \end{document}
